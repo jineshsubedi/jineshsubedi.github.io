@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.position-relative {
+      position: relative !important;
+}
+
+.align-items-center {
+      align-items: center !important;
+}
+
+.justify-content-center {
+      justify-content: center !important;
+}
+
+.d-flex {
+      display: flex !important;
+}
+
+.text-white {
+      color: #fff !important;
+}
+
+.text-uppercase {
+      text-transform: uppercase !important;
+}
+
+.display-1 {
+      font-size: 100px;
+      font-weight: 300;
+      line-height: 1.2;
+}
+.text-primary {
+      -webkit-text-fill-color: var(--vp-home-hero-name-color)
+}
+
+.text-uppercase {
+      text-transform: uppercase !important;
+}
+
+.position-absolute {
+      position: absolute !important;
+}
+
+h1,
+.font-weight-bolder {
+      font-weight: 900 !important;
+}
+
+h1,
+.h1 {
+      font-size: 2.5rem;
+}

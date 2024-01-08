@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.1.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "vitepress": "^1.0.0-rc.32"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs --port 80"
+  },
+  "base": "/viteresume/",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "vue3-pagination": "^1.0.16"
+  }
+}
