@@ -13,7 +13,7 @@
                               </div>
                               <div class="ytinfo" v-if="result.title">
                                     <div class="flex d-flex">
-                                          <img :src="generateThumbnailUrl()" alt="">
+                                          <img :src="generateThumbnailUrl" alt="">
                                           <div style="padding: 10px;">
                                                 <h3><b>{{ result.title }}</b></h3>
                                                 <h4><b>{{ result.size }}</b></h4>
@@ -66,7 +66,7 @@ function validateYoutubeUrl() {
 function fetchData() {
       loading.value = true;
       result.value = {}
-      status = this.validateYoutubeUrl()
+      status = validateYoutubeUrl()
       if (status) {
             axios.get('https://youtube-mp3-downloader2.p.rapidapi.com/ytmp3/ytmp3/?url=' + url.value, {
                   headers: {
