@@ -55,6 +55,6 @@ export default defineConfig({
     }
   },
   sitemap: {
-    hostname: 'https://jineshsubedi.github.io/viteresume/'
+    hostname: 'https://jineshsubedi.github.io/'
   }
 })
