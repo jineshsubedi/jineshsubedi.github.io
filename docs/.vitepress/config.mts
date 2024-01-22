@@ -32,6 +32,7 @@ export default defineConfig({
         text: 'API',
         collapsed: true,
         items: [
+          { text: 'Youtube Video To MP3', link: '/blog/youtube-video-to-mp3' },
           { text: 'Nepali Forex Exchange Rates', link: '/blog/nepal-forex' },
         ]
       }

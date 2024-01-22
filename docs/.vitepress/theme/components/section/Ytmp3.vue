@@ -6,7 +6,7 @@
                               <div>
                                     <h3>Please Input Valid Youtube URL</h3>
                                     <div class="position-relative flex d-flex align-items-center justify-content-center">
-                                          <input type="text" :class="normalInput" v-model="url">
+                                          <input type="text" :class="normalInput" v-model="url" placeholder="https://www.youtube.com/watch?v=TDDRGULKfv0">
                                           <button class="convert" @click="fetchData()">Convert</button>
                                     </div>
                                     <p v-if="!status" class="text-error">Invalid URL</p>
@@ -39,7 +39,7 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-var url = ref('https://www.youtube.com/watch?v=sanElvgQWPQ');
+var url = ref('');
 var loading = ref(false);
 var result = ref({});
 var normalInput = 'form-input ml-10'
@@ -51,6 +51,7 @@ function extractVideoId() {
       return match ? match[1] : null;
 }
 function generateThumbnailUrl() {
+      this
       const videoId = extractVideoId();
       if (videoId) {
             return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
