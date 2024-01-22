@@ -51,7 +51,7 @@ function extractVideoId() {
       return match ? match[1] : null;
 }
 function generateThumbnailUrl() {
-      const videoId = this.extractVideoId();
+      const videoId = extractVideoId();
       if (videoId) {
             return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
