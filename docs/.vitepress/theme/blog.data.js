@@ -3,11 +3,11 @@ export default {
             return {
                   ARTICLES: [
                         {
-                              title: "Youtube Video To MP3",
-                              excerpt: "YouTube is an excellent video site, and we have received numerous surprises on it. We can listen to music and see...",
+                              title: "YouTube to MP3 Converter with RapidAPI",
+                              excerpt: "YouTube is a popular video platform where users can discover and enjoy a wide variety of content, including music...",
                               href: "./blog/youtube-video-to-mp3",
                               date: "2024-01-21",
-                              tag: "API, YOUTUBE, Video, MP3"
+                              tag: "RapidAPI, Youtube, MP3, Converter"
                         },
                         {
                               title: "Nepali Forex Exchange Rates",

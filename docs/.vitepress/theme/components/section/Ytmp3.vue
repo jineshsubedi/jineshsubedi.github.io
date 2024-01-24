@@ -18,9 +18,10 @@
                                                 <h3><b>{{ result.title }}</b></h3>
                                                 <h4><b>{{ result.size }}</b></h4>
                                                 <br>
-                                                <a :href="result.link" target="_blank" class="downloadBtn">
+                                                <a :href="result.link" v-if="result.link != ''" target="_blank" class="downloadBtn">
                                                       Download
                                                 </a>
+                                                <Badge v-if="result.msg != 'success'" type="danger" >{{ result.msg }}</Badge>
                                           </div>
                                     </div>
                               </div>
@@ -51,7 +52,6 @@ function extractVideoId() {
       return match ? match[1] : null;
 }
 function generateThumbnailUrl() {
-      this
       const videoId = extractVideoId();
       if (videoId) {
             return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
@@ -68,11 +68,12 @@ function fetchData() {
       loading.value = true;
       result.value = {}
       status = validateYoutubeUrl()
+      var id = extractVideoId()
       if (status) {
-            axios.get('https://youtube-mp3-downloader2.p.rapidapi.com/ytmp3/ytmp3/?url=' + url.value, {
+            axios.get('https://youtube-mp36.p.rapidapi.com/dl?id=' + id, {
                   headers: {
-                        'X-RapidAPI-Key': '0dbd38fc8dmsh7004146a64a1761p17226ejsnceab381ff0ef',
-                        'X-RapidAPI-Host': 'youtube-mp3-downloader2.p.rapidapi.com'
+                        'X-RapidAPI-Key': '391792d4d0msh4ffa34579f72b9fp10757fjsn57e54c96321e',
+                        'X-RapidAPI-Host': 'youtube-mp36.p.rapidapi.com'
                   }
             })
                   .then(response => {
