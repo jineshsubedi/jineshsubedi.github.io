@@ -3,6 +3,13 @@ export default {
             return {
                   ARTICLES: [
                         {
+                              title: "whats my IP Address",
+                              excerpt: "Welcome to the \"What's My IP\" page! This page offers details about your current public IP address. When your...",
+                              href: "./blog/whats-my-ip",
+                              date: "2024-01-24",
+                              tag: "IP, ISP, Location"
+                        },
+                        {
                               title: "YouTube to MP3 Converter with RapidAPI",
                               excerpt: "YouTube is a popular video platform where users can discover and enjoy a wide variety of content, including music...",
                               href: "./blog/youtube-video-to-mp3",
