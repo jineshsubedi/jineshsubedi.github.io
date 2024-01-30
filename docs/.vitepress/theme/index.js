@@ -4,6 +4,7 @@ import './css/custom.css'
 import Tag from "./components/Tag.vue";
 import Forex from "./components/Forex.vue";
 import BadgeBlog from "./components/Badge.vue";
+import ShowCase from "./components/ShowCase.vue";
 import VideoCard from "./components/VideoCard.vue";
 import ArticleCard from "./components/ArticleCard.vue";
 import LandingBlog from "./components/LandingBlog.vue";
@@ -21,6 +22,7 @@ export default {
       enhanceApp(ctx) {
             ctx.app.component('Tag', Tag);
             ctx.app.component('Forex', Forex);
+            ctx.app.component('ShowCase', ShowCase);
             ctx.app.component('BadgeBlog', BadgeBlog);
             ctx.app.component('VideoCard', VideoCard);
             ctx.app.component('ArticleCard', ArticleCard);
