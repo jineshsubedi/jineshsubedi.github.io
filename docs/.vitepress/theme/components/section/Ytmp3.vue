@@ -40,7 +40,7 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-var url = ref('');
+var url = ref('https://www.youtube.com/watch?v=-78eGCRGVjM');
 var loading = ref(false);
 var result = ref({});
 var normalInput = 'form-input ml-10'
@@ -64,6 +64,7 @@ function validateYoutubeUrl() {
 
       return youtubeRegex.test(url.value);
 }
+fetchData();
 function fetchData() {
       loading.value = true;
       result.value = {}
