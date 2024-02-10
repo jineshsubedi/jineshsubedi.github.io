@@ -14,7 +14,6 @@ import VideoContainer from "./components/VideoContainer.vue";
 import ForexConversion from "./components/ForexConversion.vue";
 import WhatsMyIp from "./components/WhatsMyIp.vue";
 
-import SectionAbout from "./components/section/About.vue";
 import Ytmp3 from "./components/section/Ytmp3.vue";
 
 export default {
@@ -32,7 +31,6 @@ export default {
             ctx.app.component('VideoContainer', VideoContainer);
             ctx.app.component('ForexConversion', ForexConversion);
 
-            ctx.app.component('SectionAbout', SectionAbout);
             ctx.app.component('Ytmp3', Ytmp3);
             ctx.app.component('WhatsMyIp', WhatsMyIp);
       }
